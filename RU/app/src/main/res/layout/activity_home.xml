@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="andreluis.ru.HomeActivity"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconehome"
+        android:src="@drawable/iconehome"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEGUNDA-FEIRA"
+        android:layout_below="@id/iconehome"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#FF5A5959"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="35sp"
+        android:text="Desjejum"
+        android:id="@+id/desjejumButton"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/almocoButton"
+        android:background="#00ffffff"
+        android:focusable="false"
+        android:clickable="true"
+        android:singleLine="false"
+        android:elevation="200dp" />
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="35sp"
+        android:text="Almoço"
+        android:id="@+id/almocoButton"
+        android:layout_alignTop="@+id/desjejumButton"
+        android:layout_centerHorizontal="true"
+        android:background="#01ffffff"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="35sp"
+        android:text="Jantar"
+        android:id="@+id/jantarButton"
+        android:layout_alignTop="@+id/almocoButton"
+        android:layout_toEndOf="@+id/almocoButton"
+        android:background="#00fcf9f9"
+        android:clickable="true" />
+
+
+</RelativeLayout>
