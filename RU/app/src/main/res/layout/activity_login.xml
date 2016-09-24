@@ -28,7 +28,7 @@
         android:textColor="#fdfbfb"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:background="#ff3d00"/>
+        android:background="#E7470D"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
         android:id="@+id/button"
         android:layout_alignEnd="@+id/CampoSenha"
         android:layout_alignParentStart="true"
-        android:background="#ff3d00"
+        android:background="#E7470D"
         android:textSize="10sp"
         android:layout_below="@+id/CampoSenha"
         android:onClick="startActivityHome"

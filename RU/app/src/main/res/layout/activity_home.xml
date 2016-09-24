@@ -16,41 +16,68 @@
         android:id="@+id/iconehome"
         android:src="@drawable/iconehome"
         android:adjustViewBounds="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#E7470D"/>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SEGUNDA-FEIRA"
-        android:layout_below="@id/iconehome"
-        android:layout_centerHorizontal="true"
+        android:text="26/09 SEGUNDA-FEIRA"
         android:textSize="24sp"
         android:textColor="#FF5A5959"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_below="@+id/iconehome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00 - 09:00         "
+        android:textSize="10sp"
+        android:id="@+id/horario_desjejum"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toStartOf="@+id/almocoButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:00 - 14:30         "
+        android:textSize="10sp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toStartOf="@+id/jantarButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:00 - 19:30         "
+        android:textSize="10sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/setaEsquerda"
+        android:layout_alignEnd="@+id/jantarButton" />
 
     <Button
         android:layout_width="100sp"
         android:layout_height="35sp"
         android:text="Desjejum"
         android:id="@+id/desjejumButton"
-        android:layout_below="@+id/textView"
-        android:layout_toStartOf="@+id/almocoButton"
-        android:background="#00ffffff"
-        android:focusable="false"
+        android:background="#7fffffff"
         android:clickable="true"
-        android:singleLine="false"
-        android:elevation="200dp" />
+        android:layout_below="@+id/horario_desjejum"
+        android:layout_alignEnd="@+id/horario_desjejum" />
 
     <Button
         android:layout_width="100sp"
         android:layout_height="35sp"
         android:text="Almoço"
         android:id="@+id/almocoButton"
-        android:layout_alignTop="@+id/desjejumButton"
-        android:layout_centerHorizontal="true"
-        android:background="#01ffffff"
-        android:clickable="true" />
+        android:background="#7fffffff"
+        android:clickable="true"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="100sp"
@@ -59,8 +86,27 @@
         android:id="@+id/jantarButton"
         android:layout_alignTop="@+id/almocoButton"
         android:layout_toEndOf="@+id/almocoButton"
-        android:background="#00fcf9f9"
+        android:background="#7fffffff"
         android:clickable="true" />
 
+    <ImageButton
+        android:layout_width="20sp"
+        android:layout_height="40sp"
+        android:id="@+id/setaEsquerda"
+        android:src="@drawable/seta"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignStart="@+id/desjejumButton"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="20sp"
+        android:layout_height="40sp"
+        android:id="@+id/setaDireita"
+        android:src="@drawable/setadireita"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/textView3"
+        android:clickable="true" />
 
 </RelativeLayout>
