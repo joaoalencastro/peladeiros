@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Matrícula"
+        android:text="@string/matricula"
         android:id="@+id/Matricula"
         android:textSize="24sp"
         android:layout_marginTop="39dp"
@@ -23,17 +23,17 @@
     <TextView
         android:layout_width="10000sp"
         android:layout_height="40sp"
-        android:text="                      CONSULTA"
+        android:text="@string/consulta"
+        android:gravity="center_horizontal"
         android:textSize="24sp"
         android:textColor="#fdfbfb"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:background="#E7470D"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Autenticação do usuário"
+        android:text="@string/autenticacao_do_usuario"
         android:textColor="#fc0101"
         android:id="@+id/AutUsu"
         android:layout_marginTop="59dp"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Senha"
-        android:text="Senha"
+        android:text="@string/senha"
         android:textSize="24sp"
         android:layout_above="@+id/button"
         android:layout_alignStart="@+id/Matricula" />
@@ -70,12 +70,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="24sp"
-        android:text="consultar"
+        android:text="@string/consultar"
         android:id="@+id/button"
         android:layout_alignEnd="@+id/CampoSenha"
         android:layout_alignParentStart="true"
         android:background="#E7470D"
-        android:textSize="10sp"
+        android:textSize="12sp"
         android:layout_below="@+id/CampoSenha"
         android:onClick="startActivityHome"
         android:textColor="#fcfafa" />
