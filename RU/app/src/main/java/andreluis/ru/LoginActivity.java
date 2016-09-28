@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-
     protected Button mConsultarButton;   // Botão que tem função de consulta do nome de matrícula + senha
     protected EditText mCampoMatricula, mCampoSenha;
     protected String matricula, senha;

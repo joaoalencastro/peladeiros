@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="andreluis.ru.LoginActivity"
+    android:background="#fefbfb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECARGA"
+        android:textSize="24sp"
+        android:textColor="#FF5A5959"
+        android:id="@+id/topText"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matrícula"
+        android:id="@+id/Matricula"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/AutUsu"
+        android:layout_alignStart="@+id/AutUsu" />
+
+    <TextView
+        android:layout_width="10000sp"
+        android:layout_height="40sp"
+        android:text="Consulta"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="#fdfbfb"
+        android:id="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#E7470D"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autenticação do usuário"
+        android:layout_marginTop="20dp"
+        android:textColor="#fc0101"
+        android:id="@+id/AutUsu"
+        android:layout_below="@+id/topText"
+        android:layout_toStartOf="@+id/CampoMatricula" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Senha"
+        android:text="Senha"
+        android:textSize="24sp"
+        android:layout_above="@+id/boleto_button"
+        android:layout_alignStart="@+id/Matricula" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/CampoMatricula"
+        android:layout_alignBottom="@+id/Matricula"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/CampoSenha"
+        android:layout_below="@+id/CampoMatricula"
+        android:layout_alignStart="@+id/CampoMatricula" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="24sp"
+        android:text="Gerar Boleto"
+        android:id="@+id/boleto_button"
+        android:layout_alignEnd="@+id/CampoSenha"
+        android:layout_alignParentStart="true"
+        android:background="#E7470D"
+        android:textSize="10sp"
+        android:layout_below="@+id/CampoSenha"
+        android:onClick="startActivityHome"
+        android:layout_marginTop="30dp"
+        android:textColor="#fcfafa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="24sp"
+        android:text="Cartao de Credito"
+        android:id="@+id/credito_button"
+        android:layout_alignEnd="@+id/CampoSenha"
+        android:layout_alignParentStart="true"
+        android:background="#E7470D"
+        android:textSize="10sp"
+        android:layout_below="@+id/boleto_button"
+        android:onClick="startActivityHome"
+        android:layout_marginTop="5dp"
+        android:textColor="#fcfafa" />
+
+    <ImageButton
+        android:layout_width="20sp"
+        android:layout_height="40sp"
+        android:id="@+id/setaEsquerda"
+        android:src="@drawable/seta"
+        android:background="#00ffffff"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/topText"
+        android:layout_alignEnd="@+id/Senha" />
+
+    <ImageButton
+        android:layout_width="20sp"
+        android:layout_height="40sp"
+        android:id="@+id/setaDireita"
+        android:src="@drawable/setadireita"
+        android:background="#00ffffff"
+        android:layout_align="@+id/AutUsu"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/topText"
+        android:layout_toEndOf="@+id/topText"
+        android:layout_marginStart="49dp" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:background="#DCDCDC"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/garfo"
+        android:src="@drawable/garfo"
+        android:background="#00ffffff"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp" />
+
+</RelativeLayout>
