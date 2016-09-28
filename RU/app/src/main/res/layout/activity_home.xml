@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="26/09 SEGUNDA-FEIRA"
+        android:text="@string/_26_09_segunda_feira"
         android:textSize="24sp"
         android:textColor="#FF5A5959"
         android:id="@+id/textView"
@@ -32,9 +32,9 @@
         android:layout_marginTop="22dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="79sp"
         android:layout_height="wrap_content"
-        android:text="07:00 - 09:00         "
+        android:text="@string/_07_00_09_00"
         android:textSize="10sp"
         android:id="@+id/horario_desjejum"
         android:layout_alignBaseline="@+id/textView2"
@@ -42,18 +42,18 @@
         android:layout_toStartOf="@+id/almocoButton" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="79sp"
         android:layout_height="wrap_content"
-        android:text="11:00 - 14:30         "
+        android:text="@string/_11_00_14_30"
         android:textSize="10sp"
         android:id="@+id/textView2"
         android:layout_alignTop="@+id/textView3"
         android:layout_toStartOf="@+id/jantarButton" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="79sp"
         android:layout_height="wrap_content"
-        android:text="17:00 - 19:30         "
+        android:text="@string/_17_00_19_30"
         android:textSize="10sp"
         android:id="@+id/textView3"
         android:layout_below="@+id/setaEsquerda"
@@ -62,7 +62,7 @@
     <Button
         android:layout_width="100sp"
         android:layout_height="35sp"
-        android:text="Desjejum"
+        android:text="@string/desjejum"
         android:id="@+id/desjejumButton"
         android:background="#7fffffff"
         android:clickable="true"
@@ -72,7 +72,7 @@
     <Button
         android:layout_width="100sp"
         android:layout_height="35sp"
-        android:text="Almoço"
+        android:text="@string/almoco"
         android:id="@+id/almocoButton"
         android:background="#7fffffff"
         android:clickable="true"
@@ -82,7 +82,7 @@
     <Button
         android:layout_width="100sp"
         android:layout_height="35sp"
-        android:text="Jantar"
+        android:text="@string/jantar"
         android:id="@+id/jantarButton"
         android:layout_alignTop="@+id/almocoButton"
         android:layout_toEndOf="@+id/almocoButton"
